@@ -1,0 +1,98 @@
+.divMenu{
+    right: 25px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 78px;
+    height: 70px;
+}
+.divMenu .textMenu{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--darkgray);
+    margin: 0;
+    letter-spacing: normal;
+}
+.divMenu .imgMenu{
+    cursor: pointer;
+    justify-self: flex-end;
+    width: 25px;
+    margin-left: 12px;
+}
+.divMenu .divActiveMenu{
+    position: absolute;
+    top: 0px;
+    right: -15px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #fff; 
+    z-index: 3;
+    box-shadow: 2px 5px 20px 0 rgba(0,0, 0, 0.1);
+    width: 390px;
+    height: 850px;
+    padding-top: 18px;
+}
+.divMenu .divActiveMenu .divCloseMenu{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    align-items: center;
+    padding-right: 15px;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+.divMenu .divActiveMenu .divCloseMenu .textCerrar{
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 400;
+    align-self: flex-end;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+.divMenu .divActiveMenu .divCloseMenu .imgCerrar{
+    height: 15px;
+    margin-bottom: 0px;
+}
+.divMenu .divActiveMenu .divSectionsMenu, .divMenu .divActiveMenu .divSectionsMenuGray{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 7px 0;
+    width: 100%;
+    min-width: 320px;
+    padding: 0 20px;
+}
+.divMenu .divActiveMenu .divSectionsMenu p, .divMenu .divActiveMenu .divSectionsMenuGray p{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--darkgray);
+    letter-spacing: -0.1px;
+    margin-bottom: 13px;
+    margin-right: 25px;
+}
+.divMenu .divActiveMenu .divSectionsMenuGray{
+    background-color: #efeeef;
+    margin-bottom: 0px;
+    padding: 25px 20px;
+}
+.divMenu .divActiveMenu .divSectionsMenu .linkModelos{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--darkgray);
+    letter-spacing: -0.1px;
+    margin-bottom: 13px;
+    margin-right: 25px;
+}
+.divMenu .hr{
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--grayhr);
+}
+.divMenu .hr2{
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--grayhr2);
+}

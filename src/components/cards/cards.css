@@ -1,0 +1,191 @@
+.cards{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 55px;
+    padding-bottom: 100px;
+}
+.gridcards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+    grid-template-rows: auto;
+    grid-column-gap: 26px;
+    grid-row-gap: 26px;
+    justify-items: center;
+}
+.carCards{
+    margin-top: 55px;
+}
+.navbar{
+    border-bottom: 1px solid var(--verylightgray);
+}
+/* FILTROS */
+.filterWeb{
+    display: flex;
+}
+.filterWeb .first{
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 50px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-bottom: 0;
+}
+.filterWeb .filters{
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 50px;
+    padding: 9px 18px;
+    margin-bottom: 0;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+.filterWeb .filters:hover{
+    background-color: var(--white);
+    padding: 9px 18px;
+    border-radius: 30px;
+}
+.filterMobile {
+    display: none;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    padding-right: 10px;
+    z-index: 2;
+}
+.pFilterBy{
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.08px;
+    font-weight: 600;
+    color: var(--gray);
+}
+.filterMobile img, .filterMobile img{
+    width: 10px;
+    margin-top: -15px;
+    margin-left: 7px;
+}
+.filterMobile .down, .filterMobile .down{
+    transform: rotate(180deg);
+}
+.divFilterAct {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    background-color: #fff;
+    top: 20px;
+    border-radius: 8px;
+    left: -27px;
+    box-shadow: 2px 2px 20px 0px rgba(0,0, 0, 0.1);
+}
+.divFilterAct button {
+    width: 170px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #d8d8d8;
+    letter-spacing: -0.1px;
+    font-weight: 400;
+    font-size: 10px;
+    text-align: left;
+    cursor: pointer;
+    padding-left: 15px;
+    background-color: transparent;
+}
+.divFilterAct .lastbtn{
+    border-bottom: none;
+} 
+.divFilterAct button:hover {
+    background-color: rgba(209, 214, 214, 0.2);
+}
+.divFilterAct .lastbtn:hover{
+    border-radius: 8px;
+} 
+
+/* ORDEN */
+.divOrder {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    padding-right: 10px;
+    z-index: 2;
+}
+.pOrderBy{
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.08px;
+    font-weight: 600;
+    color: var(--gray);
+}
+.divOrder img, .filterMobile img{
+    width: 10px;
+    margin-top: -15px;
+    margin-left: 7px;
+}
+.divOrder .down, .filterMobile .down{
+    transform: rotate(180deg);
+}
+.divOrderAct {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    background-color: #fff;
+    top: 20px;
+    border-radius: 8px;
+    right: 10px;
+    box-shadow: 2px 2px 20px 0px rgba(0,0, 0, 0.1);
+}
+.divOrderAct button {
+    width: 170px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #d8d8d8;
+    letter-spacing: -0.1px;
+    font-weight: 400;
+    font-size: 10px;
+    text-align: left;
+    cursor: pointer;
+    padding-left: 15px;
+    background-color: transparent;
+}
+.divOrderAct .lastbtn{
+    border-bottom: none;
+} 
+.divOrderAct button:hover {
+    background-color: rgba(209, 214, 214, 0.2);
+}
+.divOrderAct .lastbtn:hover{
+    border-radius: 8px;
+} 
+
+@media only screen and (max-width: 1400px) {
+    .cards{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .filterWeb .filters{
+        margin-right: 30px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .filterWeb .filters{
+        margin-right: 8px;
+    }
+}
+@media only screen and (max-width: 910px) {
+    .filterWeb{
+        display: none;
+    }
+    .filterMobile{
+        display: flex;
+    }
+    .divOrderAct{
+        right: -27px;
+    }
+}
